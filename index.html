@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeiras Masters - Galinheiros e Viveiros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white text-center py-3">
+        <img src="" alt="Logo Madeiras Masters" class="img-fluid" style="max-height: 100px;">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="sobre.html">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="produtos.html">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/celeiro capa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Celeiro</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/galinheiro capa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Galinheiro Estilo Americano</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/galinheiro verde 3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Galinheiro Americano Verde</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Produtos -->
+    <section class="produtos container my-5">
+        <h2 class="text-center mb-4">Nossos Produtos</h2>
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/galinheiro verde.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 1</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 1', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/viveiro preto.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 2</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 2', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/celeiro.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 3</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 3', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/galinheiro verde 3.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 4</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 4', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/Imagem do WhatsApp de 2025-02-06 à(s) 07.26.45_2a2f5c81.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 5</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 5', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/viveiro preto 2.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 6</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 6', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/viveiro preto 2.jpg" class="card-img-top" alt="Viveiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Viveiro Modelo 1</h5>
+                        <p class="card-text">R$ 700,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Viveiro Modelo 1', 700.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/viveiro preto.jpg" class="card-img-top" alt="Viveiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Viveiro Modelo 2</h5>
+                        <p class="card-text">R$ 700,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Viveiro Modelo 2', 700.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/viveiro preto.jpg" class="card-img-top" alt="Galinheiro modelo 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Galinheiro Modelo 2</h5>
+                        <p class="card-text">R$ 500,00</p>
+                        <button class="btn btn-success" onclick="adicionarAoCarrinho('Galinheiro Modelo 2', 500.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Madeiras Masters - Todos os direitos reservados.</p>
+        <p><a href="https://wa.me/19989336051" class="text-white">Contato via WhatsApp</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
