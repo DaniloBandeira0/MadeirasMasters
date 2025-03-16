@@ -1,7 +1,7 @@
 <?php
 $produtos = [
-    ['nome' => 'Galinheiro Modelo 1', 'preco' => 500.00, 'imagem' => 'galinheiro1.jpg'],
-    ['nome' => 'Viveiro Modelo 1', 'preco' => 700.00, 'imagem' => 'viveiro1.jpg']
+    ['nome' => 'Galinheiro Modelo 1', 'imagem' => 'galinheiro1.jpg'],
+    ['nome' => 'Viveiro Modelo 1', 'imagem' => 'viveiro1.jpg']
 ];
 ?>
 <!DOCTYPE html>
@@ -64,9 +64,8 @@ $produtos = [
                             <img src="<?= $produto['imagem'] ?>" class="card-img-top" alt="<?= $produto['nome'] ?>">
                             <div class="card-body text-center">
                                 <h5 class="card-title"><?= $produto['nome'] ?></h5>
-                                <p class="card-text">R$ <?= number_format($produto['preco'], 2, ',', '.') ?></p>
                                 <!-- Botão de Contato via WhatsApp -->
-                                <a href="https://wa.me/seu_numero?text=Olá, gostaria de mais informações sobre o produto: <?= urlencode($produto['nome']) ?> - R$ <?= number_format($produto['preco'], 2, ',', '.') ?>" 
+                                <a href="https://wa.me/seu_numero?text=Olá, gostaria de mais informações sobre o produto: <?= urlencode($produto['nome']) ?>. Foto: <?= urlencode('https://seudominio.com/' . $produto['imagem']) ?>" 
                                    class="btn btn-success" 
                                    target="_blank">
                                     Entrar em Contato
