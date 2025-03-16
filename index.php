@@ -27,7 +27,6 @@ $produtos = [
                 <li class="nav-item"><a class="nav-link text-white" href="sobre.html">Sobre Nós</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="produtos.html">Produtos</a></li>
                 <li class="nav-item"><a class="nav-link text-white" href="contato.html">Contato</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="carrinho.html">Carrinho</a></li>
             </ul>
         </nav>
     </header>
